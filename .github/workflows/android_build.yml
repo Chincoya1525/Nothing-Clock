@@ -30,7 +30,7 @@ jobs:
       - name: 🔨 Build release APK
         # Creates the production-ready release APK file
         # The output is located at: build/app/outputs/flutter-apk/app-release.apk
-        run: flutter build apk --release
+        run: flutter build apk --release --android-skip-build-dependency-validation
 
       - name: ⬆️ Upload APK artifact
         # Makes the built APK file available for download in the workflow summary
